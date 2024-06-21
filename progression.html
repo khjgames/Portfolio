@@ -1,0 +1,179 @@
+<!-- Note to self for an idiot learner rem = root element measurement, 0.0661 -->
+<!-- em = element measurement, vh = viewport height, vw viewport width -->
+<!-- converting between px, rem, em, vh 0.0661*viewport height is actually 6.61*vh -->
+<!-- Comments are god.      -->
+<!-- This is my life now. https://www.w3schools.com/csS/css3_flexbox.asp -->
+<!-- image maps unfortunately dont support percentage scaling co-ordinates. There are work-arounds.  
+    for future reference: https://stackoverflow.com/questions/7844399/responsive-image-map
+    https://zaneray.com/responsive-image-map/
+-->
+<!--         -->
+<!-- Chicken is good food. -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>PROGRESSION — Perseverance: Isekai MMORPG</title>
+    <link rel="icon" href="images/Hourglass_Icon_Highlight_D.png"> <!-- Favicon [1 mark] -->
+</head>
+
+<body>
+    <div id="sp" style="position: absolute; top: 0;">
+        <video class="tl bg-video" autoplay="autoplay" muted="muted" loop="loop" poster="images/Totenheim_BG.png"><source src="videos/Stream_Startup_Countdown.mov" type="video/mp4"></video>
+    </div>
+
+    <!--
+    -->
+    <section id="str" style=" --video-needed-min-scale: max(80px, max(100vw/16, 100vh/9)); position: absolute; top: calc(var(--video-needed-min-scale)*9); width: 200px;">
+        <hr style="position: absolute; width:100vw; margin: 0px -9px 0px;">
+        <hr style="position: absolute; width:100vw; margin: 0px -9px 0px; padding-bottom: 4.5rem;">
+        <div style="position: absolute; left: 6rem;">
+            <h5> Professions </h5>
+            <ul>
+                <li>Alchemist</li>
+                <li>Blacksmith</li>
+                <li>Merchant</li>
+                <li>Minstrel</li>
+                <li>Priest</li>
+            </ul>
+        </div>
+        <div style="position: absolute; left: 8rem;">
+            <h5 style="width: 3rem;"> EXP for Level </h5>
+            <ol>
+                <li>&nbsp;0 xp</li>
+                <li>&nbsp;22 xp</li>
+                <li>&nbsp;45 xp</li>
+                <li>&nbsp;68 xp</li>
+                <li>&nbsp;95 xp</li>
+            </ol>
+        </div>
+        <div style="position: absolute; left: 10rem;">
+            <h5 style="width: 6rem;">Progression table</h5> <!-- this is here temporarily because the table css gets super messed up without it -->
+            <table>
+                <tr>
+                  <th style="text-align: center;">Learned at</th>
+                  <th colspan="3" style="text-align: center;"> Rogue class progression </th>
+                </tr>
+                <tr>
+                    <th> Lv.7 - passive </th>
+                    <td>Devils Luck</td>
+                    <td>Substitution</td>
+                    <td>Ethereal</td>
+                </tr>
+                <tr> 
+                    <th> Lv.9 - skill </th>
+                    <td>Shadowstep</td>
+                    <td>Tripple Burst</td>
+                    <td>Haste</td>
+                </tr>
+                <tr> 
+                    <th> Lv.11 -  passive </th>
+                    <td>Archers Pride</td>
+                    <td>Vampiric</td>
+                    <td>Phantasmal</td>
+                </tr>
+                <tr>
+                    <th> Lv.12 - skill </th>
+                    <td>Step Shot</td>
+                    <td>Dagger Throw</td>
+                    <td>Phantom Drain</td>
+                </tr>
+              </table>
+        </div>
+<pre style="color:white; font-size:0.05rem;"> <!-- Yes. I used this tag for ASCII art. Its great for that. -KHJ -->
+                                                                                                                                                                                                       
+                      %%                                                                                                                 %                                    %                        
+  %@@%%%@%@%%@@%  @@@@@@@@@%*#@@@@@@%%@@%%%@@@%%    %%%@@%%%%@@#++*%%%%%%%%@@##@@@@@%%@@@ @%%%%%%@@%%@%%%%@@%%%@%@%@%%@@@@%%%%          @%%%###%   @@@%%%%#   %%%%%#*@   %@@%%%%%%@@@@%%%#@@%##%#**#   
+  @%+-+=-===--=+%@%#+-=====+=-+*##%*----*++#=+*+%%  @*=--=+++--+#**==-=====-:::#*=:::-+#% ##*---*##*----=++=--=*%%*-==%%==---=*%%      %#----+@    %%=::::+#% @#=--=#@  @#=::-==-::-##+--::-+===--=%   
+   %*---+%%%#----#%%#==+*%%%##=-*@%%+---*%%%#=--=% %+---##% @=++@ %+=--*%% @#::%@@=::-*%  %%#=+%% #+--=+%  @#--#@%#==-=#%@@+---+@%     @=:--:=@@     *-::::=%  %#-:%@ %%--:-*+%%%+:-@ @+:::*%% ++-=#%  
+   %**+-+%% #=-=-*@%#=---%%%%%@@@ %%=---+% %%----%%%=---=%@%%%%@@ @++--+%%@@@%%@ %*-:-=@@ %%+=*@  @*---=%%@@@@%% @%----#  @#---=%   %%@*-++=*-*@%    %-:=:::+%@%*-:#% %=:::*%    @@%# @=:::*% @%%%%@   
+   @*+=-=%%%#=---%@%#=---%%%=-%    @-=--*%%@#--:=@%%#----+*#%%%   %=---*@@+-+%    @=---*@ %+-=%   %*-++=%%#-=%%  %#----#%%@*---*@   %%#-*%#-:--%%   %%-=#=-===@%*::%@%#--::#*        %%+-::*%%+:+@     
+   %+-*==*++=--=#%%@#---------#    %+-:-=++=--=*@@  @%*=-----=#@ %%=--------+%    %#----###--%@   @*----==--+%   @%---=++=-=-+%%   %%#--*%@+:::=%%   #--#%+:-:-##-:##%*:-=-#%         #=:-:--++-*@     
+   @*=--=#**#%@@%  @%=:--%@*+=#    @----+#=---=##     %%%+---:-*%%%=---+#%*-+%    %%=:::+%=-#@    %*---+%%#=+%%  %%--:-**=---+#*   %%=:=****=-:-*%   #--#%%+----*-:#% *:=::##         %*--=*=#%+*@     
+   @+---=%         @%=---%%%#%###%%%-::-+%#+-::-#% @@@@% %%*::-=%%%=---*@ +#@%#@@  @%--:-=-+%%    %*-:-*%%%*%#%%%@%-::=#%#=:::-##  @*--###*#*:--+%%  %-*#% %+:::---#% %-:::*%%   %%@# %+--:*%% ####*   
+   %+---=%         %#-==-%@%%#=-+@ @-:::+%@%+-:-=#@#=-#% %%#-::+@%%=-:-*%%%%*-:#%   @#=:--=%      @*--:=%%%%#--#@%%:::-% @%-::-=@@%#-:#%   =*-:::#@  #--#%  @*-:---#% %*:::=%%%@@+:-%%@*-::*@##@*:=#%  
+  @#=----#*       @%+-=--=++=-::*@@#::::=%@@@*=---*#=-:-++*--:*% %#--:--===--::%%   @%----#%     @%=-+-=====::-#@@+---=+@@%@=:::-##-::+** @%*-::--*%%+::=%@  %**=--#%  @%=:::-+=-=+-%%#-:::-===---+@   
+  @%########      @%%###########%%@######%@  #@####%@%###*#%@@%  @%############%%   %%#*##@      @########%####@@@######%@ @@%####%%##%%% @@####%##@%##%#%@   @%###%%   %%@%#*+**#%@%%#############@   
+                                                                                                                                   %                                                                   
+                                                                                                                                                                                                       
+                                                                                                                                                                                                       
+                                                                                                                                                                                                       
+                                %  @%  %%%%%%%%%#  %%@%%%#+%    %@      @%%%   @@%%%@     %% %%    %@%%@#+#@%%%    %%@@     @%%%%  %%%  %%@@    @%%%%#-        %%%@#%                                  
+                              %=---*@%*=----=%*------+=##=+==%@*-===#  %*--*% %%*---=%@ %@*---+%% #+---+@*---+@@ #+-==+#%##+====+#%#*+======*%@%#--==---+@@%@#+==--=%@                                 
+                              %%-:=%%*:+%@#+-#%-::%%%*=#%+::+%@*:=%#% %#--=+%@  @-:-%@    %=---+%%#=-:-%%%=--:=%%#---=%%%+--#%@*--+%@#--*#%+-=#%#*::#%%:--%%=--#%%%=*#                                 
+                 %%%@@        %#=:=%@+::+*@%%%%-::%%=#@@%+::*%=-%%    @==#::+%  @-:-%%   %%=-+:-*%-=-:-# %=-=--*%++=:-%%#-=+% %#=--%%#=#%@%+-*%@#=::#%%-:-%#-:+#   @@      %%%#%  @%                   
+               @%==:=*##=+%   %#--+% @*=--:=#%%-::==-*%%@*-:=::-#%   @*-#%=:-#%%%--=%@    @=-#-:+==#=--%%@=+#+-**=#=:-%%*--*%% %+--#%#--=+=-+%% @+::++--+%%+:-*%@##**#%  @%+---+**==#                  
+              %%%+%@#=:-#@@    #-:=%@@@%%#::=%%-:-%@@@@@%+::*%-::*@ @%:---=-:+%%%-:-#%    %==%*:::#%-:-%%@==##::-#%=:-%%#=*#% %#=##%%*--*@*--+@ @+--#%@@  @*::+%@%-=+@@  @%*%@%+==*%@                  
+                     @@@%     @%-:=%%-=%%%=-=##---%%%+-#%+::+%%+::+%%=-%%%%=--%#%-::%@    %=-%@=:+@%=:=%%@=+%%+:+%%=:-%%@+-=%#@*--*%##--*@%++=#@@=:-#%     %=:=#%#--*%         @@@@                    
+                              %====*%+=---=*=%+==+=====+*====##+=======+#**===+%#===+## %%*==+%@@%%*====@+=+*@@@@@+===+%%%%*+--+**%+++===*@%+++**====+=     @#+=-=*=*#                                 
+                                    %        %%   %%%%   %%               % %%   %%%%       %%       %              %%%    %%       %       %  %%%%            @%%%%                                   
+                                                                                                                                                                                                                                                                                                                                                                                                             
+</pre>
+    </section>
+    <!--
+    -->
+    <div class="home">
+        <div class="tl navbar">
+            <div class="tl navbar_main">
+                <a href="index.html" style="font-size: 0; padding: 0 0 0 0; top:0; height:0;">
+                    <img class="nav_img" src="images/Title_Card.png" alt="Perseverance Studios Logo">
+                </a>
+                <a class="nav_a" href="index.html">HOME</a>
+                <a class="nav_a" href="about.html">ABOUT US</a>
+                <a class="nav_a" href="portfolio.html">PORTFOLIO</a>
+                <a class="nav_a--active" href="#">PROGRESSION</a>
+                <a class="nav_a" href="world.html">WORLD</a>
+                <a class="nav_b" style="padding-left: 0.03rem;" href="https://www.twitch.tv/khjgames">
+                    <img class="nav_icon" src = "images/Twitch.png" onmouseover="hover(this,'images/Twitch_Hover.png');" onmouseout="unhover(this,'images/Twitch.png');" alt="Perseverance Twitch Channel">  
+                </a>
+                <a class="nav_b" href="https://www.youtube.com/@khjgames3427/featured">
+                    <img class="nav_icon" src = "images/Youtube.png" onmouseover="hover(this,'images/Youtube_Hover.png');" onmouseout="unhover(this,'images/Youtube.png');" alt="Perseverance Youtube Channel">
+                </a>
+            </div>
+        </div>
+        <!--
+        -->
+        <div style="padding-left: 1rem; padding-top: calc(4.5rem - 225px);">   
+            <img src="images/Stats_Interactable.png" alt="Character Stats GUI" usemap="#statmap" width="516" height="350" >
+            <map name="statmap">
+                <area shape="rect" coords="100,23,308,70" alt="Stat Points" href="#sp" onclick="statInfo('sp')">
+                <area shape="rect" coords="67,81,128,111" alt="Strength" href="#str" onclick="statInfo('str')">
+                <area shape="rect" coords="271,81,332,111" alt="Luck" href="#lck" onclick="statInfo('lck')">
+                <area shape="rect" coords="67,126,128,156" alt="Wisdom" href="#wis" onclick="statInfo('wis')">
+                <area shape="rect" coords="271,126,332,156" alt="Perception" href="#prc" onclick="statInfo('prc')">
+                <area shape="rect" coords="67,171,128,201" alt="Agility" href="#agi" onclick="statInfo('agi')">
+                <area shape="rect" coords="271,171,332,201" alt="Focus" href="#fcs" onclick="statInfo('fcs')">
+                <area shape="rect" coords="67,216,128,246" alt="Toughness" href="#tgh" onclick="statInfo('tgh')">
+                <area shape="rect" coords="271,216,332,246" alt="Immunity" href="#imn" onclick="statInfo('imn')">
+            </map>
+        </div>
+    </div>
+    <!--
+    -->
+    <script> //This is where I would write simple javascript that does not merit its own file
+        function hover(element, new_src) {
+            element.setAttribute('src', new_src); 
+        }
+        function unhover(element, new_src) {
+            element.setAttribute('src', new_src);
+        }
+        function statInfo(stat) { //I would either toggle the visibility, 
+            // or content of html elements to display descriptions of the selected stat here, 
+            // but I needed an image map (and have no practical use case)
+            // and I needed to show I knew how to do a hyperlink / jump redirect. 
+            // (again no practical current use case as I don't have enough webpage 
+            // content ready (game info & footage) to need to be able to quickly scroll through it)
+            // and planning how to do best display my information for the mmorpg as a landing page is a long and tedious process.
+            // so for the sake of the assignment it will temporarily just be this
+            // press "str" to go to bottom of page, "stat points" to go to top.
+            //element.setAttribute('content', stat);
+        }
+    </script>
+</body>
+
+</html>
+

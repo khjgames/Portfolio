@@ -1,0 +1,200 @@
+<!-- Note to self for an idiot learner rem = root element measurement, 0.0661 -->
+<!-- em = element measurement, vh = viewport height, vw viewport width -->
+<!-- converting between px, rem, em, vh 0.0661*viewport height is actually 6.61*vh -->
+<!-- Comments are god.      -->
+<!-- This is my life now. https://www.w3schools.com/csS/css3_flexbox.asp -->
+<!--         -->
+<!--     
+    -->
+<!--         -->
+<!-- Chicken is good food. -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css"> <!--  External file in a CSS folder. [1 mark], Linking external file in index and portfolio pages [1 mark]-->
+    <title>PORTFOLIO — Perseverance: Isekai MMORPG</title>
+    <link rel="icon" href="images/Hourglass_Icon_Highlight_D.png"> <!-- Favicon [1 mark] -->
+    <style>
+        p {
+            background: hsla(0,0%,8%,.55);
+            border-radius: 0.25rem;
+            width: 90%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body> <!-- onload="scrollingAnchor()" -->
+    <video id = "scrolling_anchor_video" style = "left: 0; top:0;" autoplay="autoplay" muted="muted" loop="loop" poster="images/Teaser_C.png" class="bg-video"><source src="videos/Stream_Startup_Countdown.mov" type="video/mp4"></video>
+    <!--
+    -->
+    <div class="home">
+        <div class="tl navbar">
+            <div class="tl navbar_main">
+                <a href="index.html" style="font-size: 0; padding: 0 0 0 0; top:0; height:0;">
+                    <img class="nav_img" src="images/Title_Card.png" alt="Perseverance Studios Logo">
+                </a>
+                <a class="nav_a" href="index.html">HOME</a>
+                <a class="nav_a" href="about.html">ABOUT US</a>
+                <a class="nav_a--active" href="#">PORTFOLIO</a>
+                <a class="nav_a" href="progression.html">PROGRESSION</a>
+                <a class="nav_a" href="world.html">WORLD</a>
+                <a class="nav_b" style="padding-left: 0.03rem;" href="https://www.twitch.tv/khjgames">
+                    <img class="nav_icon" src = "images/Twitch.png" onmouseover="hover(this,'images/Twitch_Hover.png');" onmouseout="unhover(this,'images/Twitch.png');" alt="Perseverance Twitch Channel">  
+                </a>
+                <a class="nav_b" href="https://www.youtube.com/@khjgames3427/featured">
+                    <img class="nav_icon" src = "images/Youtube.png" onmouseover="hover(this,'images/Youtube_Hover.png');" onmouseout="unhover(this,'images/Youtube.png');" alt="Perseverance Youtube Channel">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <article style="padding-top: 1.6rem;">
+        <h2 style="padding-bottom: 0.7rem; color: black;">Past work</h2>
+        <div style="width: 14rem; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1.5rem;">
+            <div style="flex: 1 0 0; width: 50%; text-align: center;">
+                <p style="text-align: center;">Blades logo — <span style="font-size: 0.18rem;">06/27/2020</span></p> 
+                <img style="max-width: 100%; height: auto; max-height: 3rem;" src="images/Blades.png" alt="portfolio work">
+            </div>
+            <div style="flex: 1 0 0; width: 50%; text-align: center;"> 
+                <p style="text-align: center;"> Regions system — <span style="font-size: 0.18rem;">07/20/2020 11:22 PM</span></p>
+                <div style="max-width: 100%; height: auto; max-height: 3rem;">
+                    <video style="width: 100%; height: auto; max-height: 3rem" playsinline="" loop="" controls=""><source src="https://i.gyazo.com/bd9d3ef295bea73cb8edfc038a7963e4.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </div> 
+
+        <div style="width: 14rem; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1.5rem;">
+            <div style="flex: 1 0 0; width: 50%; text-align: center;"> 
+                <p style="text-align: center;"> Habitats system, AI Migration diagram — <span style="font-size: 0.18rem;">09/03/2020 9:45 PM</span></p>
+                <img style="max-width: 100%; height: auto; max-height: 3rem;" src="images/Habitats.png" alt="portfolio work">
+            </div>
+            <div style="flex: 1 0 0; width: 50%; text-align: center;"> 
+                <p style="text-align: center;">OLD in-game darkgrove footage — <span style="font-size: 0.18rem;">09/07/2020 7:13 PM</span></p>
+                <div style="max-width: 100%; height: auto; max-height: 3rem;">
+                    <video style="width: 100%; height: auto; max-height: 3rem" playsinline="" loop="" controls=""><source src="https://i.gyazo.com/b92a7e9f16c56b071b8929ebfef33734.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </div> 
+        <div style="width: 14rem; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1.5rem;">
+            <div style="flex: 1 0 0; width: 50%; text-align: center;"> 
+                <p style="text-align: center;"> Migration of a single mob spawn hotspot, <br>9 months @ 25920x speed — <span style="font-size: 0.18rem;">09/10/2020 1:40 AM</span></p>
+                <div style="max-width: 100%; height: auto; max-height: 3rem;">
+                    <video style="width: 100%; height: auto; max-height: 3rem" playsinline="" loop="" controls=""><source src="https://i.gyazo.com/162cb73e67b843242a684b50e9917b89.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+            <div style="flex: 1 0 0; width: 50%; text-align: center;"> 
+                <p style="text-align: center;"> Darkgrove migration example, <br>9 months @ 25920x speed — <span style="font-size: 0.18rem;">09/10/2020 1:53 AM</span></p>
+                <div style="max-width: 100%; height: auto; max-height: 3rem;">
+                    <video style="width: 100%; height: auto; max-height: 3rem" playsinline="" loop="" controls=""><source src="https://i.gyazo.com/9d496c080c0cf79846b9ff5f5af8ff2d.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </div> 
+        <div style="width: 14rem; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1.5rem;">
+            <div style="flex: 1 0 0; width: 50%; text-align: center;"> 
+                <p style="text-align: center;"> Ragdoll development — <span style="font-size: 0.18rem;">09/30/2020 1:30 AM</span></p>
+                <div style="max-width: 100%; height: auto; max-height: 3rem;">
+                    <video style="width: 100%; height: auto; max-height: 3rem" playsinline="" loop="" controls=""><source src="https://i.gyazo.com/1e2fb6d096fb88a6ce6861822c797c26.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+            <div style="flex: 1 0 0; width: 50%; text-align: center;"> 
+                <p style="text-align: center;"> Calculate & cache valid locations within habitats — <span style="font-size: 0.18rem;">11/07/2020 3:05 AM</span></p>
+                <img style="max-width: 100%; height: auto; max-height: 3rem;" src="images/Valid_Spawns.png" alt="portfolio work">
+            </div>
+        </div>   
+        <div style="width: 14rem; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1.5rem;">
+            <div style="flex: 1 0 0; width: 50%; text-align: center;"> 
+                <p style="text-align: center;"> Early test - 100 Brigand AI in Hamlet — <span style="font-size: 0.18rem;">12/16/2020 10:17 PM</span></p>
+                <div style="max-width: 100%; height: auto; max-height: 3rem;">
+                    <video style="width: 100%; height: auto; max-height: 3rem" playsinline="" loop="" controls=""><source src="https://i.gyazo.com/b3f056b697b48aa95b7b9045ae53d7dd.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+            <div style="flex: 1 0 0; width: 50%; text-align: center;"> 
+                <p style="text-align: center;"> Painting Suite plugin (65% done) — <span style="font-size: 0.18rem;">05/08/2021 8:32 PM</span></p>
+                <div style="max-width: 100%; height: auto; max-height: 3rem;">
+                    <video style="width: 100%; height: auto; max-height: 3rem" playsinline="" loop="" controls=""><source src="https://i.gyazo.com/22f339724549e2c467cf7a6a62ae77af.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </div>   
+        <div style="width: 14rem; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1.5rem;">
+            <div style="flex: 1 0 0; width: 50%; text-align: center;">
+                <p style="text-align: center;">OLD V1 lighting plugin — <span style="font-size: 0.18rem;">08/06/2021</span></p>
+                <iframe style="width: 100%; height: 8rem; max-height: 3rem; position: relative; border: none;" src="https://www.youtube.com/embed/1rLBVmG4R24" allowfullscreen></iframe>
+            </div>
+            <div style="flex: 1 0 0; width: 50%; text-align: center;">
+                <p style="text-align: center;">Showcasing finalized GUIs — <span style="font-size: 0.18rem;">11/04/2022 12:30 AM</span></p>
+                <img style="max-width: 100%; height: auto; max-height: 3rem;" src="images/game_gui_work.png" alt="portfolio work">
+            </div>
+        </div>   
+        <div style="width: 14rem; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1.5rem;">
+            <div style="flex: 1 0 0; width: 50%; text-align: center;">
+                <p style="text-align: center;">New plugin GUIs (git, regions & lighting) — <span style="font-size: 0.18rem;">08/19/2023</span></p>
+                <img style="max-width: 100%; height: auto; max-height: 3rem;" src="images/Plugins.png" alt="portfolio work">
+            </div>
+            <div style="flex: 1 0 0; width: 50%; text-align: center;">
+                <p style="text-align: center;"> Lua codebase — <span style="font-size: 0.18rem;">present</span></p>
+                <img style="max-width: 100%; height: auto; max-height: 3rem;" src="images/Codebase.png" alt="portfolio work">
+            </div>
+        </div>  
+        <div style="width: 14rem; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1.5rem;">
+            <div style="flex: 1 0 0; width: 50%; text-align: center;"> 
+                <p style="text-align: center;"> — Some codebase history — </p>
+                <div style="max-width: 100%; height: auto; max-height: 3rem;">
+                    <video style="width: 100%; height: auto; max-height: 3rem" playsinline="" loop="" controls=""><source src="https://i.gyazo.com/a66c7bae28236eec668006d4207768a0.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+            <div style="flex: 1 0 0; width: 50%; text-align: center;"> 
+                <p style="text-align: center;"> — More codebase history — </p>
+                <div style="max-width: 100%; height: auto; max-height: 3rem;">
+                    <video style="width: 100%; height: auto; max-height: 3rem" playsinline="" loop="" controls=""><source src="https://i.gyazo.com/be407466b67d716d4739fa4c2af19cd7.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </div>
+    </article>
+    <script> //This is where I would write simple javascript that does not merit its own file
+        function hover(element, new_src){
+            element.setAttribute('src', new_src);
+        }
+
+        function unhover(element, new_src){
+            element.setAttribute('src', new_src);
+        }
+        
+        function getScrollPercent(){
+            var h = document.documentElement, 
+                b = document.body,
+                st = 'scrollTop',
+                sh = 'scrollHeight';
+            return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+        }
+        function scrollingAnchor(){
+            var scrollPercent = getScrollPercent();           
+            var element = document.getElementById("scrolling_anchor_video");
+            element.style.removeProperty("top"); //only use top:0 for initial position during load / before first scroll
+            //top: calc(100vh - var(--video-needed-min-scale) * 9)
+            var style = getComputedStyle(element);
+            var height = element.offsetHeight;
+            console.log('Scroll Percentage:', scrollPercent);
+            element.style.bottom = '0'; 
+            var windowHeight = window.innerHeight;
+            var maxOffsetHeight = (height - windowHeight);
+            var scroll_tween_range = 60;
+            var offsetHeight = maxOffsetHeight/scroll_tween_range*Math.min(scroll_tween_range,Math.max(scrollPercent-(80-scroll_tween_range),0));
+            var scrollPosition = window.scrollY;
+            var newBottomPosition = windowHeight - (scrollPosition + height - offsetHeight);
+            element.style.bottom = '' + newBottomPosition + 'px';
+            console.log("why doesn't this work? " + offsetHeight);
+        }
+
+        window.addEventListener('scroll', function() {
+            scrollingAnchor();
+        });
+    </script>
+</body>
+
+</html>
