@@ -90,7 +90,7 @@ th {
     height: calc(var(--video-needed-min-scale)*9);
     z-index: -99;
     position: absolute;
-    background: transparent url("poster.jpg") 50% 50% / cover no-repeat ;
+    /* background: transparent url("poster.jpg") 50% 50% / cover no-repeat ;*/
 }
 
 /* Style the navigation bar */
