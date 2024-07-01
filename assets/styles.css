@@ -200,6 +200,86 @@ th {
     left: 0;
 }
 
+.profile-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px; /* Optional: Add some padding around the content */
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px; /* 120px image*/
+    height: 120px; /* 120px image*/
+    border: 8px solid #111214;
+    border-radius: 50%; /* Makes the container a circle */
+    overflow: hidden; /* Ensures the image fits within the circle */
+    background-color: #111214; /* Background color for the border area */
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover; /* Ensures the image covers the area */
+    border-radius: 50%; /* Makes the image itself a circle */
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px; /* 120px image*/
+    height: 150px; /* 120px image*/
+    border: 8px solid #111214;
+    border-radius: 25%; /* Makes the container a circle */
+    overflow: hidden; /* Ensures the image fits within the circle */
+    background-color: #111214; /* Background color for the border area */
+}
+
+.game-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Ensures the image covers the area */
+    border-radius: 25%; /* Makes the image itself a circle */
+}
+
+.profile-name {
+    margin-left: 39px; /* Space between the image and the heading */
+    margin-top: -15px; /* */
+}
+
+.game-bio {
+    margin-top: -99px;
+    margin-left: 205px;
+    margin-bottom: 0;
+    line-height: 1.7;
+    color: #bdbebe;
+    font-size: 18px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: Builder Sans, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+}
+
+.profile-bio {
+    margin-top: -99px;
+    margin-left: 75px;
+    margin-bottom: 0;
+    line-height: 1.7;
+    color: #bdbebe;
+    font-size: 18px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: Builder Sans, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+}
+
+.background-box {
+    width: 1000px;
+    height: 260px;
+    background-color: rgba(15, 16, 17, 0.75);
+    user-select: none;
+}
+
 /* For WebKit-based browsers (Chrome, Safari, etc.) */
 ::-webkit-scrollbar {
     width: 12px;

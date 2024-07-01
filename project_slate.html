@@ -1,0 +1,135 @@
+<!-- Note to self for an idiot learner rem = root element measurement, 0.0661 -->
+<!-- em = element measurement, vh = viewport height, vw viewport width -->
+<!-- converting between px, rem, em, vh 0.0661*viewport height is actually 6.61*vh -->
+<!-- Comments are god.      -->
+<!-- This is my life now. https://www.w3schools.com/csS/css3_flexbox.asp -->
+<!--         -->
+<!--     
+    -->
+<!--         -->
+<!-- Chicken is good food. -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css"> <!--  External file in a CSS folder. [1 mark], Linking external file in index and portfolio pages [1 mark]-->
+    <title>Perseverance ~ Isekai MMORPG</title>
+    <link rel="icon" href="images/Hourglass_Icon_Highlight_D.png"> <!-- Favicon [1 mark] -->
+    <style> /* Internal css [2 marks] */
+        .internal_css_img {
+            border-radius: 0.25rem;
+            width: 100%;
+            max-width: 5.5rem;
+            height: auto;
+            max-height: 3.5rem;
+        }
+        .internal_css_p {
+            text-align: center;
+            color:rgb(245, 245, 245);
+            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.6), 1px -1px 0 rgba(0, 0, 0, 0.6), -1px 1px 0 rgba(0, 0, 0, 0.6), 1px 1px 0 rgba(0, 0, 0, 0.6);
+        }
+        .internal_css_panel {
+            z-index: -50;
+            position: absolute; 
+            top: -0.1rem; 
+            left: -0.1rem; 
+            width: calc(100% + 0.2rem); 
+            height: calc(100% + 0.2rem); 
+            background: hsla(0,0%,8%,.55);
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+
+<body style="background-color: #232527;">
+    
+    <!--
+        <video autoplay="autoplay" muted="muted" loop="loop" poster="images/Promotion_Slide_1_C.png" class="tl bg-video"><source src="videos/Stream_Startup_Countdown.mov" type="video/mp4"></video>
+    -->
+    
+    <div class="home">
+        <div class="tl navbar"> <!--  Classes for div. [1 mark], One html element with two classes [1 mark]
+            styles-->
+            <div class="tl navbar_main"> <!-- 6. Have one HTML element on your index.html page that is affected by two different class -->
+                <a href="index.html" style="font-size: 0; padding: 0 0 0 0; top:0; height:0;">
+                    <img class="nav_img" src="images/Title_Card.png" alt="Perseverance Studios Logo">
+                </a>
+                <a class="nav_a" href="index.html">ABOUT</a>
+                <a class="nav_a" href="blades.html">BLADES</a>
+                <a class="nav_a" href="brick_game.html">BRICK_GAME</a>
+                <a class="nav_a--active" href="#">PROJECT SLATE</a>
+                <a class="nav_a" href="perseverance.html">PERSEVERANCE</a>
+                <a class="nav_b" id = "useless_external_css_id_selector" href="https://www.twitch.tv/khjgames"> <!-- 5. Use an id selector to add style to one specific element on your index.html page. [1 mark]-->
+                    <img class="nav_icon" src = "images/Twitch.png" onmouseover="hover(this,'images/Twitch_Hover.png');" onmouseout="unhover(this,'images/Twitch.png');" alt="Perseverance Twitch Channel">  
+                </a>
+                <a class="nav_b" href="https://www.youtube.com/@khjgames3427/featured">
+                    <img class="nav_icon" src = "images/Youtube.png" onmouseover="hover(this,'images/Youtube_Hover.png');" onmouseout="unhover(this,'images/Youtube.png');" alt="Perseverance Youtube Channel">
+                </a>
+            </div>
+        </div>
+
+        <div class="background-box" style="margin-left: 5vw;width: calc(90vw - 12px);height: 140vh;position: absolute;margin-top: 10vh;z-index: -1;">
+
+            <div style="padding-top: 0.8rem;"> <!-- 1. Use inline CSS at least once in your index.html page. [1 mark]-->
+                <div style="width: 80vw; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 2rem; padding-bottom: 0.8rem; padding-top: 0.2rem">
+                    <div style="flex: 1 0 0; width: 50%; text-align: center;">
+                        <div style="max-width: 1000px;">
+                            <img src="images/Blades_V6_Artsy_b.png" style="max-width: 400px; height: auto; display: block; margin: 0 auto;">
+                        </div>
+                        <div style = "margin-top: -47px;">
+                            <div class="profile-wrapper">
+                                <a target="_blank" href="https://www.roblox.com/games/928690113/Blades-V4-ALPHA-Update-Test-Server">
+                                    <div class="game-container">
+                                        <img src="images/Blades_Icon.png" alt="Game Image" class="game-image">
+                                    </div>
+                                </a>
+                                <h2 class="profile-name"> Description </h1>
+                            </div>
+                            <p class="game-bio">
+A team match-based sword-fighting game featuring strategic loadouts,
+colorful maps, tactical game modes, character customization, and leaderboards.
+
+More than 80 perks and 15 abilities to choose from!
+Negate, steal, evolve, empower, debuff, heal, slow!
+
+Min-max endless possibilities and create your own loadouts!
+Lead your team to victory and top the leaderboard!
+
+
+                            </p>
+                            <div style="margin-left: 3vw; max-width: 74vw;">
+                                <div style="max-width: 100%; height: auto; max-height: 10rem;">
+                                    <video style="width: 100%; height: auto; max-height: 10rem;" playsinline="" loop="" controls=""><source src="https://i.gyazo.com/b92a7e9f16c56b071b8929ebfef33734.mp4" type="video/mp4"></video>
+                                </div>
+                            </div>
+                        </div>
+                        <!--
+                        <img class="internal_css_img" src ="images/what_3.png" alt="what is an Isekai game?">
+                        <div style="margin: 0 auto; position: relative; width: 50%">
+                            <p class="internal_css_p">Isekai means "another world" in Japanese. Perseverance's core gameplay loop is that each death sends you backwards in time as if your death never happened, and all progress gained will be lost. For each new character you create, you will inherit a portion of your previous character's traits.</p>
+                            <div class="internal_css_panel"></div> 
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script> //This is where I would write simple javascript that does not merit its own file
+        function hover(element, new_src) {
+            element.setAttribute('src', new_src);
+        }
+
+        function unhover(element, new_src) {
+            element.setAttribute('src', new_src);
+        }
+    </script>
+</body>
+
+</html>
+
